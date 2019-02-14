@@ -29,15 +29,10 @@ protocol MusicDetailViewToPresenterProtocol: class{
     var interactor: MusicDetailPresenterToInteractorProtocol? {get set}
     var router: MusicDetailPresenterToRouterProtocol? {get set}
     func updateView()
-    func shareToSocial()
-    func stopMusic()
-    func playPausePressed()
     var index: Int { get set }
-    func nextSongPressed()
-    func previousSongPressed()
 
 }
 
 protocol MusicDetailPresenterToRouterProtocol: class{
-    static func createModule(data: MusicResultsList, index: Int) -> UIViewController
+    static func createModule(data: CharacterModel, index: Int) -> UIViewController
 }

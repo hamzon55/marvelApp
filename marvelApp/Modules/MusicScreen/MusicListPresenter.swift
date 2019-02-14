@@ -38,10 +38,12 @@ class MusicListPresenter: MusicListViewToPresenterProtocol {
 }
 
 extension MusicListPresenter: MusicListInteractorToPresenterProtocol {
+ 
+    
   
     
-    func fetchedMusicListDataSuccess(_ model: MusicListResponse) {
-        guard let list = model.results else { return }
+    func fetchedMusicListDataSuccess(_ model: CharacterResponse) {
+        guard let list = model.data.results else { return }
         data = list
         SingletonMusic.sharedInstance.resultsArray = list
         tableDataSource = MusicListTableDataSource(data: list)

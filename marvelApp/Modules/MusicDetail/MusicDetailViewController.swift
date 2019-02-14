@@ -30,24 +30,7 @@ class MusicDetailViewController: UIViewController {
         super.viewWillAppear(animated)
         presenter?.updateView()
     }
-    @IBAction func nextBtnClicked(_ sender: Any) {
-        presenter?.nextSongPressed()
-        
-    }
-    override func viewDidDisappear(_ animated: Bool) {
-        presenter?.stopMusic()
-    }
-    
-    @IBAction func previousBtnClicked(_ sender: Any) {
-        presenter?.previousSongPressed()
-    }
-    
-    @IBAction func btnTapped(_ sender: Any) {
-        presenter?.playPausePressed()
-    }
-    @IBAction func sharedBtn(_ sender: Any) {
-        presenter?.shareToSocial()
-}
+
 }
 
 extension MusicDetailViewController: MusicDetailPresenterToViewProtocol {

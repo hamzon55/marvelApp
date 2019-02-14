@@ -12,9 +12,9 @@ import Foundation
 struct Constants {
     
     struct Network {
-        static let base_url = "https://itunes.apple.com/search"
-        static let default_search = "michael+jackson"
-
+        static let base_url = "https://gateway.marvel.com/v1/public/characters"
+        static let default_search = ""
+        
     }
 }
 

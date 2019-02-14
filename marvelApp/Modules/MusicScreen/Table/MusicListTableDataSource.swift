@@ -10,8 +10,8 @@ import UIKit
 
 final class MusicListTableDataSource: NSObject, UITableViewDataSource {
     
-    var data :[MusicResultsList]?
-    convenience init(data: [MusicResultsList]) {
+    var data :[CharacterModel]?
+    convenience init(data: [CharacterModel]) {
         self.init()
         self.data = data
     }
@@ -28,7 +28,7 @@ final class MusicListTableDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MusicListTableViewCell.cellType, for: indexPath) as? MusicListTableViewCell
             else{ return UITableViewCell()}
-            cell.displayCell(music: data![indexPath.row])
+        cell.displayCell(character: data![indexPath.row])
         return cell
     }
     

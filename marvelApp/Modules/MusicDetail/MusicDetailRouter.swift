@@ -10,7 +10,7 @@ import UIKit
 
 class MusicDetailRouter: MusicDetailPresenterToRouterProtocol{
   
-    class func createModule(data: MusicResultsList, index: Int) -> UIViewController{
+    class func createModule(data: CharacterModel, index: Int) -> UIViewController{
         let view = MusicDetailViewController()
         let presenter: MusicDetailViewToPresenterProtocol & MusicDetailInteractorToPresenterProtocol = MusicDetailPresenter()
         let interactor: MusicDetailPresenterToInteractorProtocol = MusicDetailInteractor()

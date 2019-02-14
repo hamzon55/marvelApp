@@ -33,7 +33,7 @@ internal extension Endpoint {
     {
     
         
-        let url = baseURL.appendingPathComponent(properties.path)
+        let url = baseURL
         
         var newParameters = properties.parameters
         properties.parameters.forEach { newParameters.updateValue($1, forKey: $0) }

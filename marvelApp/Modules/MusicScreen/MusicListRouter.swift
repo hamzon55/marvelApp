@@ -26,7 +26,7 @@ class MusicListRouter: MusicListPresenterToRouterProtocol{
         return view
     }
     
-    func navigateToDetail(origin: UIViewController, model: MusicResultsList, _ index: Int) {
+    func navigateToDetail(origin: UIViewController, model: CharacterModel, _ index: Int) {
         origin.navigationController?.pushViewController(MusicDetailRouter.createModule(data: model, index: index), animated: true)
     }
 }

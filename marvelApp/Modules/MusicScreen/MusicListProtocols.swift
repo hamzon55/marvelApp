@@ -15,7 +15,7 @@ protocol MusicListPresenterToViewProtocol: class{
 }
 
 protocol MusicListInteractorToPresenterProtocol: class{
-    func fetchedMusicListDataSuccess(_ model: MusicListResponse)
+    func fetchedMusicListDataSuccess(_ model: CharacterResponse)
     func fetchedMusicListDataFailed(_ error: Error)
     func searchButtonPressed()
 
@@ -39,5 +39,5 @@ protocol MusicListViewToPresenterProtocol: class{
 protocol MusicListPresenterToRouterProtocol: class{
     static func createModule() -> UIViewController
     
-    func navigateToDetail(origin : UIViewController, model: MusicResultsList, _ index: Int)
+    func navigateToDetail(origin : UIViewController, model: CharacterModel, _ index: Int)
 }

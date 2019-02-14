@@ -9,20 +9,17 @@
 import Foundation
 
 
-struct MusicListResponse: Codable {
-    
-    var resultCount: Int?
-    let results: [MusicResultsList]?
-    
-}
-struct MusicResultsList: Codable {
-    
-    let wrapperType, kind, artistName, collectionName, trackName, primaryGenreName: String?
-    let trackPrice: Float?
-    let releaseDate: String?
-    let currency: String?
-    let artworkUrl100: String?
-    let previewUrl: String?
-    let trackTimeMillis: Int?
+class CharacterModel: Decodable {
+    let id: Int
+    let name: String
+    let description: String
+
 }
 
+class CharacterData: Decodable {
+    let results: [CharacterModel]?
+}
+
+class CharacterResponse: Decodable {
+    let data: CharacterData
+}

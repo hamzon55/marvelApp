@@ -12,7 +12,7 @@ import Foundation
 class SingletonMusic : NSObject {
     
     static let sharedInstance = SingletonMusic()
-    var resultsArray: [MusicResultsList] = []
+    var resultsArray: [CharacterModel] = []
     private override init() { }
     
 }

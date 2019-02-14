@@ -17,7 +17,7 @@ class MusicListInteractor: MusicListPresenterToInteractorProtocol{
     private let disposeBag = DisposeBag()
     
     func musicList() {
-        let list = webService.load(modelType: MusicListResponse.self, from: .Music(serviceType: .list(term: DynamicVariables.Networking.Url.item_search)))
+        let list = webService.load(modelType: CharacterResponse.self, from: .Music(serviceType: .list(apikey: DynamicVariables.Networking.Url.apikey, hash: DynamicVariables.Networking.Url.hash, ts: DynamicVariables.Networking.Url.ts)))
             list.observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] (results) in
                 results.validate {
