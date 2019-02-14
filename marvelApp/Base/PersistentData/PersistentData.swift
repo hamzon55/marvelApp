@@ -10,7 +10,9 @@ import Foundation
 
 private enum Keys: String {
     case baseURL
-    
+    case apiKey
+    case hash
+    case ts
 }
 
 final class PersistentData {
@@ -18,5 +20,7 @@ final class PersistentData {
     private init(){}
     
     var baseURL = Persistent<String>(Keys.baseURL.rawValue)
-  
+    var apiKey = Persistent<String>(Keys.apiKey.rawValue)
+    var hash = Persistent<String>(Keys.hash.rawValue)
+    var ts = Persistent<String>(Keys.ts.rawValue)
 }

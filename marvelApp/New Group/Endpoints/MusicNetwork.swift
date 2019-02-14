@@ -9,15 +9,15 @@
 import Foundation
 
 enum MusicService: ServiceEnum {
-    case list(apikey: String,hash: String,ts: String)
+    case list()
 }
 
 struct MusicNetworkFactory: Networking {
     typealias EnumType = MusicService
     static func getService(from type: EnumType) -> Requestable {
         switch type {
-        case .list(let apikey, let hash,let ts):
-            return MusicNetwork(apikey,hash,ts)
+        case .list():
+            return MusicNetwork()
     
         }
     }
@@ -26,7 +26,6 @@ struct MusicNetworkFactory: Networking {
 extension MusicNetworkFactory {
     
     private struct MusicNetwork: Requestable {
-        //private var term: String
         private var api_key: String
         private var ts: String
         private var hash: String
@@ -34,17 +33,17 @@ extension MusicNetworkFactory {
         var path: String = ""
         var parameters: [String : Any] {
             return [
-                "apikey": "\(api_key)",
-                "hash": "\(hash)",
-                "ts": "\(ts)"
+                "apikey": api_key,
+                "hash": hash,
+                "ts": ts
                 
             ]
         }
         
-        init(_ api_key: String,_ hash: String,_ ts: String){
-           self.api_key = api_key
-            self.hash = hash
-            self.ts = ts
+        init(){
+            self.api_key = PersistentData.shared.apiKey.value
+            self.hash = PersistentData.shared.hash.value
+            self.ts = PersistentData.shared.ts.value
         }
     }
 }

@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let main = MainRouter.createModule()
         navigationController.viewControllers = [main]
         PersistentData.shared.baseURL.value = Constants.Network.base_url
+        PersistentData.shared.apiKey.value = Constants.Network.apikey
+        PersistentData.shared.hash.value = Constants.Network.hash
+        PersistentData.shared.ts.value = Constants.Network.ts
 
         window = UIWindow(frame: UIScreen.main.bounds);
         window?.rootViewController = navigationController

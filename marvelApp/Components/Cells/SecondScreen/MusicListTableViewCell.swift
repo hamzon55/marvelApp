@@ -12,16 +12,10 @@ import UIKit
 class MusicListTableViewCell : UITableViewCell {
     
     
-    @IBOutlet weak var releaseDate: UILabel!
+    @IBOutlet weak var heroeDesc: UILabel!
     @IBOutlet weak var cellView: UIView!
-
-    @IBOutlet weak var albumTitle: UILabel!
-    @IBOutlet weak var duration: UILabel!
-    @IBOutlet weak var musicGenre: UILabel!
-    @IBOutlet weak var imageSinger: UIImageView!
-    @IBOutlet weak var priceSong: UILabel!
-    @IBOutlet weak var titleSong: UILabel!
-    @IBOutlet weak var artisteName: UILabel!
+    @IBOutlet weak var heroeName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -30,8 +24,8 @@ class MusicListTableViewCell : UITableViewCell {
         return String(describing: self)
     }
     func displayCell(character: CharacterModel){
-        artisteName.text = character.name
-        albumTitle.text = character.description
+        heroeName.text = character.name
+        heroeDesc.text = character.description
        
         
 
