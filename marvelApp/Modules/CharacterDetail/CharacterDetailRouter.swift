@@ -21,7 +21,6 @@ class CharacterDetailRouter: CharacterDetailPresenterToRouterProtocol{
         presenter.router = router
         presenter.interactor = interactor
         interactor.presenter = presenter
-        presenter.index = index
         return view
     }
     

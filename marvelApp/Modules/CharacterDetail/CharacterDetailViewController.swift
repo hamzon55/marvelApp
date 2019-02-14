@@ -14,11 +14,7 @@ class CharacterDetailViewController: UIViewController {
     @IBOutlet weak var trackName: UILabel!
     @IBOutlet weak var artisteName: UILabel!
     @IBOutlet weak var coverImg: UIImageView!
-    @IBOutlet weak var playPauseBtn: UIButton!
-    
-    @IBOutlet weak var nextSongBtn: UIButton!
-    @IBOutlet weak var previousSongBtn: UIButton!
-   
+
     var presenter: CharacterDetailViewToPresenterProtocol?
     
     override func viewDidLoad() {
@@ -34,6 +30,8 @@ class CharacterDetailViewController: UIViewController {
 }
 
 extension CharacterDetailViewController: CharacterDetailPresenterToViewProtocol {
+
+    
 
     
 }

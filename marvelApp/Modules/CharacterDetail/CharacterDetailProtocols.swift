@@ -9,11 +9,9 @@
 import UIKit
 
 protocol CharacterDetailPresenterToViewProtocol: class{
-    var playPauseBtn: UIButton! { get set }
     var coverImg: UIImageView! { get set }
     var artisteName: UILabel! { get set }
     var trackName: UILabel! { get set }
-    var sharedBtn: UIButton! {get set}
 }
 
 protocol CharacterDetailInteractorToPresenterProtocol: class{
@@ -29,7 +27,6 @@ protocol CharacterDetailViewToPresenterProtocol: class{
     var interactor: CharacterDetailPresenterToInteractorProtocol? {get set}
     var router: CharacterDetailPresenterToRouterProtocol? {get set}
     func updateView()
-    var index: Int { get set }
 
 }
 
