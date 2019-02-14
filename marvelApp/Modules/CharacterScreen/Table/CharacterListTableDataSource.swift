@@ -1,5 +1,5 @@
 //
-//  MusicListTableDataSource.swift
+//  CharacterListTableDataSource.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 21/01/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MusicListTableDataSource: NSObject, UITableViewDataSource {
+final class CharacterListTableDataSource: NSObject, UITableViewDataSource {
     
     var data :[CharacterModel]?
     convenience init(data: [CharacterModel]) {
@@ -26,7 +26,7 @@ final class MusicListTableDataSource: NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MusicListTableViewCell.cellType, for: indexPath) as? MusicListTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CharacterListTableViewCell.cellType, for: indexPath) as? CharacterListTableViewCell
             else{ return UITableViewCell()}
         cell.displayCell(character: data![indexPath.row])
         return cell

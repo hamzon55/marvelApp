@@ -1,5 +1,5 @@
 //
-//  MusicDetailRouter.swift
+//  CharacterDetailRouter.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 20/01/2019.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class MusicDetailRouter: MusicDetailPresenterToRouterProtocol{
+class CharacterDetailRouter: CharacterDetailPresenterToRouterProtocol{
   
     class func createModule(data: CharacterModel, index: Int) -> UIViewController{
-        let view = MusicDetailViewController()
-        let presenter: MusicDetailViewToPresenterProtocol & MusicDetailInteractorToPresenterProtocol = MusicDetailPresenter()
-        let interactor: MusicDetailPresenterToInteractorProtocol = MusicDetailInteractor()
-        let router: MusicDetailPresenterToRouterProtocol = MusicDetailRouter()
+        let view = CharacterDetailViewController()
+        let presenter: CharacterDetailViewToPresenterProtocol & CharacterDetailInteractorToPresenterProtocol = CharacterDetailPresenter()
+        let interactor: CharacterDetailPresenterToInteractorProtocol = CharacterDetailInteractor()
+        let router: CharacterDetailPresenterToRouterProtocol = CharacterDetailRouter()
         
         view.presenter = presenter
         presenter.view = view

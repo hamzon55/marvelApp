@@ -1,5 +1,5 @@
 //
-//  MusicDetailEntities.swift
+//  CharacterDetailEntities.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 20/01/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct MusicDetailModel{
+struct CharacterDetailModel{
     var artistName: String
     var trackName: String
     var artworkUrl100: String

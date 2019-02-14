@@ -1,5 +1,5 @@
 //
-//  MusicListInteractor.swift
+//  CharacterListInteractor.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 12/01/2019.
@@ -9,29 +9,29 @@
 import UIKit
 import RxSwift
 
-class MusicListInteractor: MusicListPresenterToInteractorProtocol{
+class CharacterListInteractor: CharacterListPresenterToInteractorProtocol{
   
-    var presenter: MusicListInteractorToPresenterProtocol?
+    var presenter: CharacterListInteractorToPresenterProtocol?
     
     private let webService = WebService()
     private let disposeBag = DisposeBag()
     
-    func musicList() {
-        let list = webService.load(modelType: CharacterResponse.self, from: .Music(serviceType: .list()))
+    func CharacterList() {
+        let list = webService.load(modelType: CharacterResponse.self, from: .Character(serviceType: .list()))
             list.observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] (results) in
                 results.validate {
-                    self?.presenter?.fetchedMusicListDataSuccess(results)
+                    self?.presenter?.fetchedCharacterListDataSuccess(results)
                 }
                 }, onError: { [weak self] (error) in
-                    self?.presenter?.fetchedMusicListDataFailed(error)
+                    self?.presenter?.fetchedCharacterListDataFailed(error)
             }).disposed(by: disposeBag)
     }
     
     func search(withInfo: String) {
         let item = translateSearch(item: withInfo)
         DynamicVariables.Networking.Url.item_search = item
-        musicList()
+        CharacterList()
     }
     
     private func translateSearch(item: String) -> String {

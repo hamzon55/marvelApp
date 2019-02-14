@@ -1,5 +1,5 @@
 //
-//  MusicNetwork.swift
+//  CharacterNetwork.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 23/01/2019.
@@ -8,24 +8,24 @@
 
 import Foundation
 
-enum MusicService: ServiceEnum {
+enum CharacterService: ServiceEnum {
     case list()
 }
 
-struct MusicNetworkFactory: Networking {
-    typealias EnumType = MusicService
+struct CharacterNetworkFactory: Networking {
+    typealias EnumType = CharacterService
     static func getService(from type: EnumType) -> Requestable {
         switch type {
         case .list():
-            return MusicNetwork()
+            return CharacterNetwork()
     
         }
     }
 }
 
-extension MusicNetworkFactory {
+extension CharacterNetworkFactory {
     
-    private struct MusicNetwork: Requestable {
+    private struct CharacterNetwork: Requestable {
         private var api_key: String
         private var ts: String
         private var hash: String

@@ -1,5 +1,5 @@
 //
-//  MusicDetailInteractor.swift
+//  CharacterDetailInteractor.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 20/01/2019.
@@ -9,9 +9,9 @@
 import UIKit
 import RxSwift
 
-class MusicDetailInteractor: MusicDetailPresenterToInteractorProtocol{
+class CharacterDetailInteractor: CharacterDetailPresenterToInteractorProtocol{
 
-    var presenter: MusicDetailInteractorToPresenterProtocol?
+    var presenter: CharacterDetailInteractorToPresenterProtocol?
     
     var artistName: String?
     var trackName: String?

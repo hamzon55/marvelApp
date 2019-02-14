@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicDetailViewController" customModule="viperProject" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterDetailViewController" customModule="marvelApp" customModuleProvider="target">
             <connections>
                 <outlet property="artisteName" destination="Hag-lB-yH4" id="Kzf-TG-BAt"/>
                 <outlet property="coverImg" destination="jho-ih-dGi" id="5VB-VP-oX7"/>

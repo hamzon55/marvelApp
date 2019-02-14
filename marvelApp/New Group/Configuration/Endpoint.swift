@@ -10,7 +10,7 @@ import Foundation
 
 internal enum Endpoint {
     
-    case Music(serviceType: MusicService)
+    case Character(serviceType: CharacterService)
 }
 
 protocol Requestable {
@@ -88,8 +88,8 @@ enum HTTPMethod: String {
 private extension Endpoint {
     var properties: Requestable {
         switch self {
-        case .Music(let serviceType):
-            return MusicNetworkFactory.getService(from: serviceType)
+        case .Character(let serviceType):
+            return CharacterNetworkFactory.getService(from: serviceType)
     }
 }
 }

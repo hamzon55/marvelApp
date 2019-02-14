@@ -1,5 +1,5 @@
 //
-//  MusicDetailViewController.swift
+//  CharacterDetailViewController.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 20/01/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 import Social
-class MusicDetailViewController: UIViewController {
+class CharacterDetailViewController: UIViewController {
     @IBOutlet weak var sharedBtn: UIButton!
     
     @IBOutlet weak var trackName: UILabel!
@@ -19,7 +19,7 @@ class MusicDetailViewController: UIViewController {
     @IBOutlet weak var nextSongBtn: UIButton!
     @IBOutlet weak var previousSongBtn: UIButton!
    
-    var presenter: MusicDetailViewToPresenterProtocol?
+    var presenter: CharacterDetailViewToPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class MusicDetailViewController: UIViewController {
 
 }
 
-extension MusicDetailViewController: MusicDetailPresenterToViewProtocol {
+extension CharacterDetailViewController: CharacterDetailPresenterToViewProtocol {
 
     
 }

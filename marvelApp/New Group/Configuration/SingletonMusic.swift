@@ -1,5 +1,5 @@
 //
-//  SingletonMusic.swift
+//  SingletonCharacter.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 28/01/2019.
@@ -9,9 +9,9 @@
 import Foundation
 
 
-class SingletonMusic : NSObject {
+class SingletonCharacter : NSObject {
     
-    static let sharedInstance = SingletonMusic()
+    static let sharedInstance = SingletonCharacter()
     var resultsArray: [CharacterModel] = []
     private override init() { }
     

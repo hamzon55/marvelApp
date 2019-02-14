@@ -30,6 +30,6 @@ class MainRouter: MainPresenterToRouterProtocol{
     func navigateToNextScreen(origin: UIViewController){
         
         guard let navigationController = origin.navigationController as? NavigationBar else {return}
-        navigationController.setViewControllers([MusicListRouter.createModule()], animated: true)
+        navigationController.setViewControllers([CharacterListRouter.createModule()], animated: true)
     }
 }

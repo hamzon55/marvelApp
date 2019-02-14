@@ -1,5 +1,5 @@
 //
-//  MusicListTableDelegate.swift
+//  CharacterListTableDelegate.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 21/01/2019.
@@ -9,14 +9,14 @@
 import UIKit
 
 
-protocol MusicListTableActionDelegate: class {
+protocol CharacterListTableActionDelegate: class {
     func navigate(index: Int)
 }
-final class MusicListTableDelegate: NSObject, UITableViewDelegate {
+final class CharacterListTableDelegate: NSObject, UITableViewDelegate {
     
-    weak var delegate: MusicListTableActionDelegate?
+    weak var delegate: CharacterListTableActionDelegate?
     
-    init(actionDelegate: MusicListTableActionDelegate) {
+    init(actionDelegate: CharacterListTableActionDelegate) {
         super.init()
         self.delegate = actionDelegate
     }

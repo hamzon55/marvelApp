@@ -1,5 +1,5 @@
 //
-//  MusicListTableViewCell.swift
+//  CharacterListTableViewCell.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 20/01/2019.
@@ -9,7 +9,7 @@
 import UIKit
 
 
-class MusicListTableViewCell : UITableViewCell {
+class CharacterListTableViewCell : UITableViewCell {
     
     
     @IBOutlet weak var heroeDesc: UILabel!

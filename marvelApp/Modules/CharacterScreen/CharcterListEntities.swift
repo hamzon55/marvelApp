@@ -1,5 +1,5 @@
 //
-//  MusicListEntities.swift
+//  CharacterListEntities.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 12/01/2019.

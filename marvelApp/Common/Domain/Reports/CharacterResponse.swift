@@ -1,5 +1,5 @@
 //
-//  MusicListResponse.swift
+//  CharacterListResponse.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 23/01/2019.

@@ -1,5 +1,5 @@
 //
-//  MusicListViewController.swift
+//  CharacterListViewController.swift
 //  viperProject
 //
 //  Created by Hamza Jerbi on 11/01/2019.
@@ -9,9 +9,9 @@
 import UIKit
 
 
-class MusicListViewController: UIViewController, UISearchBarDelegate {
+class CharacterListViewController: UIViewController, UISearchBarDelegate {
     
-    var presenter: MusicListViewToPresenterProtocol?
+    var presenter: CharacterListViewToPresenterProtocol?
     
     
     @IBOutlet weak var searchView: UISearchBar!
@@ -36,6 +36,6 @@ class MusicListViewController: UIViewController, UISearchBarDelegate {
     }
 }
 
-extension MusicListViewController: MusicListPresenterToViewProtocol {
+extension CharacterListViewController: CharacterListPresenterToViewProtocol {
  
 }
