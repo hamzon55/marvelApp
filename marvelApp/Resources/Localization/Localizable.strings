@@ -1,0 +1,10 @@
+/* 
+  Localization.strings
+  viperProject
+
+  Created by Hamza Jerbi on 21/01/2019.
+  Copyright © 2019 Hamza Jerbi. All rights reserved.
+*/
+
+"mainbutton_title" = "Start";
+"placeholder_searchView" = "Enter a Song and press enter";
