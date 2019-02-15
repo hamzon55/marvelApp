@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 
 class CharacterListTableViewCell : UITableViewCell {
     
@@ -25,18 +25,8 @@ class CharacterListTableViewCell : UITableViewCell {
     }
     func displayCell(character: CharacterModel){
         heroeName.text = character.name
-        displayImage(image: character.thumbnail.fullName )
-
-        
+        let thumbNailUrl = URL(string: character.thumbnail.fullName)
+        self.heroeImg.kf.setImage(with: thumbNailUrl)
 
     }
-    
-    private func displayImage(image: String?){
-        guard let img = image else { return }
-        guard  let url = URL(string: img) else { return}
-        guard let data = try? Data(contentsOf: url) else { return}
-        heroeImg.image = UIImage(data: data)
-        
-}
-
 }

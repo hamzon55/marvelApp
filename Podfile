@@ -6,4 +6,5 @@ target 'marvelApp' do
 
   # Pods for marvelApp
   pod 'RxSwift'
+  pod 'Kingfisher'
 end
