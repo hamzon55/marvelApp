@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fR0-o6-2i9">
-                    <rect key="frame" x="16" y="109" width="343" height="558"/>
+                    <rect key="frame" x="0.0" y="109" width="375" height="558"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="EnI-vU-0GI">
@@ -41,8 +41,8 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EnI-vU-0GI" secondAttribute="trailing" constant="16" id="88X-MM-0so"/>
                 <constraint firstItem="fR0-o6-2i9" firstAttribute="top" secondItem="EnI-vU-0GI" secondAttribute="bottom" constant="12" id="SDy-G4-cCD"/>
                 <constraint firstItem="EnI-vU-0GI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="21" id="Sxr-II-rfF"/>
-                <constraint firstItem="fR0-o6-2i9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="eGc-s8-Ram"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fR0-o6-2i9" secondAttribute="trailing" constant="16" id="hDb-n5-Sxd"/>
+                <constraint firstItem="fR0-o6-2i9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eGc-s8-Ram"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fR0-o6-2i9" secondAttribute="trailing" id="hDb-n5-Sxd"/>
                 <constraint firstItem="fR0-o6-2i9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="89" id="o1g-hX-JJw"/>
                 <constraint firstItem="fR0-o6-2i9" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="rtW-HV-RJS"/>
             </constraints>

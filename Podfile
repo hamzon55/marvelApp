@@ -6,5 +6,4 @@ target 'marvelApp' do
 
   # Pods for marvelApp
   pod 'RxSwift'
-
 end

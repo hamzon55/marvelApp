@@ -9,10 +9,9 @@
 import UIKit
 import Social
 class CharacterDetailViewController: UIViewController {
-    @IBOutlet weak var sharedBtn: UIButton!
     
-    @IBOutlet weak var trackName: UILabel!
-    @IBOutlet weak var artisteName: UILabel!
+    @IBOutlet weak var heroeName: UILabel!
+    @IBOutlet weak var heroeDesc: UILabel!
     @IBOutlet weak var coverImg: UIImageView!
 
     var presenter: CharacterDetailViewToPresenterProtocol?

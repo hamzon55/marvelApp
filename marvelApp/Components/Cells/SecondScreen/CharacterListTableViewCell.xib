@@ -11,43 +11,44 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Nj3-D4-AFc" userLabel="Character List Table View Cell" customClass="CharacterListTableViewCell" customModule="marvelApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="350" height="110"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Nj3-D4-AFc" userLabel="Character List Table View Cell" customClass="CharacterListTableViewCell" customModule="marvelApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nj3-D4-AFc" id="NEO-8K-5wa">
-                <rect key="frame" x="0.0" y="0.0" width="350" height="109.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="350" height="149.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OLr-0f-pde">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="c5d-nD-JLj"/>
+                        </constraints>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heroe Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ver-sl-127">
-                        <rect key="frame" x="83" y="11" width="184" height="21"/>
+                        <rect key="frame" x="83" y="49" width="184" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="0F1-Ur-hW0"/>
                             <constraint firstAttribute="width" constant="184" id="mb9-2a-c30"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hV-Zn-Onm">
-                        <rect key="frame" x="156" y="45" width="38" height="18"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="2hV-Zn-Onm" secondAttribute="trailing" constant="140" id="3gF-1l-oB3"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="Ver-sl-127" secondAttribute="bottom" constant="67" id="4VH-HL-Yz3"/>
+                    <constraint firstAttribute="trailing" secondItem="OLr-0f-pde" secondAttribute="trailing" id="2qb-Nn-fV2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ver-sl-127" secondAttribute="bottom" constant="69" id="4VH-HL-Yz3"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Ver-sl-127" secondAttribute="trailing" constant="67" id="6Rk-81-s6Y"/>
-                    <constraint firstItem="Ver-sl-127" firstAttribute="top" secondItem="NEO-8K-5wa" secondAttribute="topMargin" id="9OF-tg-e6e"/>
+                    <constraint firstItem="Ver-sl-127" firstAttribute="top" secondItem="NEO-8K-5wa" secondAttribute="topMargin" constant="38" id="9OF-tg-e6e"/>
+                    <constraint firstItem="OLr-0f-pde" firstAttribute="top" secondItem="NEO-8K-5wa" secondAttribute="top" id="By2-cY-Vro"/>
+                    <constraint firstItem="OLr-0f-pde" firstAttribute="leading" secondItem="NEO-8K-5wa" secondAttribute="leading" id="N4F-Yi-fnb"/>
                     <constraint firstItem="Ver-sl-127" firstAttribute="leading" secondItem="NEO-8K-5wa" secondAttribute="leadingMargin" constant="67" id="OAd-3t-QQ2"/>
-                    <constraint firstItem="2hV-Zn-Onm" firstAttribute="top" secondItem="Ver-sl-127" secondAttribute="bottom" constant="13" id="loo-Hk-gYq"/>
-                    <constraint firstItem="2hV-Zn-Onm" firstAttribute="leading" secondItem="NEO-8K-5wa" secondAttribute="leadingMargin" constant="140" id="ogr-DF-f4m"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="2hV-Zn-Onm" secondAttribute="bottom" constant="36" id="tzg-He-uj8"/>
+                    <constraint firstAttribute="bottom" secondItem="OLr-0f-pde" secondAttribute="bottom" constant="-10.5" id="gqZ-ct-Cmo"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cellView" destination="NEO-8K-5wa" id="i0P-jo-H2i"/>
-                <outlet property="heroeDesc" destination="2hV-Zn-Onm" id="jWw-kn-AR1"/>
+                <outlet property="heroeImg" destination="OLr-0f-pde" id="Ihn-9h-1s6"/>
                 <outlet property="heroeName" destination="Ver-sl-127" id="LwZ-jB-JOc"/>
             </connections>
             <point key="canvasLocation" x="131.19999999999999" y="50.374812593703155"/>

@@ -10,8 +10,8 @@ import UIKit
 
 protocol CharacterDetailPresenterToViewProtocol: class{
     var coverImg: UIImageView! { get set }
-    var artisteName: UILabel! { get set }
-    var trackName: UILabel! { get set }
+    var heroeName: UILabel! { get set }
+    var heroeDesc: UILabel! { get set }
 }
 
 protocol CharacterDetailInteractorToPresenterProtocol: class{

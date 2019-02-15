@@ -34,6 +34,8 @@ class CharacterListPresenter: CharacterListViewToPresenterProtocol {
         view?.tableView.delegate = tableDelegate
         tableDataSource = CharacterListTableDataSource()
         view?.tableView.dataSource = tableDataSource
+        view?.tableView.rowHeight  = 160
+
     }
 }
 

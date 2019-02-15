@@ -12,9 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterDetailViewController" customModule="marvelApp" customModuleProvider="target">
             <connections>
-                <outlet property="artisteName" destination="Hag-lB-yH4" id="Kzf-TG-BAt"/>
                 <outlet property="coverImg" destination="jho-ih-dGi" id="5VB-VP-oX7"/>
-                <outlet property="trackName" destination="ZQk-MB-82z" id="1th-kC-5qN"/>
+                <outlet property="heroeDesc" destination="ZQk-MB-82z" id="QNr-R3-HoY"/>
+                <outlet property="heroeName" destination="Hag-lB-yH4" id="1Fl-Ob-aeh"/>
                 <outlet property="view" destination="iN0-l3-epB" id="q6D-z5-98g"/>
             </connections>
         </placeholder>
@@ -23,14 +23,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hag-lB-yH4">
-                    <rect key="frame" x="34" y="380" width="315" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQk-MB-82z">
-                    <rect key="frame" x="30" y="449" width="315" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hag-lB-yH4">
+                    <rect key="frame" x="30" y="378" width="315" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -42,18 +36,24 @@
                         <constraint firstAttribute="width" constant="193" id="aGg-2O-6ca"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQk-MB-82z">
+                    <rect key="frame" x="30" y="448" width="315" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZQk-MB-82z" secondAttribute="trailing" constant="30" id="3zr-a8-TrN"/>
-                <constraint firstItem="ZQk-MB-82z" firstAttribute="top" secondItem="Hag-lB-yH4" secondAttribute="bottom" constant="48" id="6ci-Ss-lf9"/>
-                <constraint firstItem="ZQk-MB-82z" firstAttribute="top" secondItem="Hag-lB-yH4" secondAttribute="bottom" constant="48" id="DSz-tS-Jsx"/>
-                <constraint firstItem="Hag-lB-yH4" firstAttribute="top" secondItem="jho-ih-dGi" secondAttribute="bottom" constant="17" id="RsW-Zf-hDe"/>
+                <constraint firstItem="ZQk-MB-82z" firstAttribute="top" secondItem="Hag-lB-yH4" secondAttribute="bottom" constant="49" id="6ci-Ss-lf9"/>
+                <constraint firstItem="ZQk-MB-82z" firstAttribute="top" secondItem="Hag-lB-yH4" secondAttribute="bottom" constant="49" id="DSz-tS-Jsx"/>
+                <constraint firstItem="Hag-lB-yH4" firstAttribute="top" secondItem="jho-ih-dGi" secondAttribute="bottom" constant="15" id="RsW-Zf-hDe"/>
                 <constraint firstItem="jho-ih-dGi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="91" id="V5N-4Y-g9C"/>
-                <constraint firstItem="Hag-lB-yH4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="Wfk-Ai-pBE"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hag-lB-yH4" secondAttribute="trailing" constant="26" id="b5c-2S-IXo"/>
+                <constraint firstItem="Hag-lB-yH4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="Wfk-Ai-pBE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hag-lB-yH4" secondAttribute="trailing" constant="30" id="b5c-2S-IXo"/>
                 <constraint firstItem="jho-ih-dGi" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="94" id="bcI-rg-nhp"/>
-                <constraint firstItem="Hag-lB-yH4" firstAttribute="top" secondItem="jho-ih-dGi" secondAttribute="bottom" constant="17" id="oTn-4A-q6S"/>
+                <constraint firstItem="Hag-lB-yH4" firstAttribute="top" secondItem="jho-ih-dGi" secondAttribute="bottom" constant="15" id="oTn-4A-q6S"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jho-ih-dGi" secondAttribute="trailing" constant="91" id="owG-aq-Bia"/>
                 <constraint firstItem="ZQk-MB-82z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="wh6-m5-OHJ"/>
             </constraints>

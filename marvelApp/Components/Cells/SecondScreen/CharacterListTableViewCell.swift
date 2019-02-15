@@ -12,7 +12,7 @@ import UIKit
 class CharacterListTableViewCell : UITableViewCell {
     
     
-    @IBOutlet weak var heroeDesc: UILabel!
+    @IBOutlet weak var heroeImg: UIImageView!
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var heroeName: UILabel!
     
@@ -25,10 +25,18 @@ class CharacterListTableViewCell : UITableViewCell {
     }
     func displayCell(character: CharacterModel){
         heroeName.text = character.name
-        heroeDesc.text = character.description
-       
+        displayImage(image: character.thumbnail.fullName )
+
         
 
     }
+    
+    private func displayImage(image: String?){
+        guard let img = image else { return }
+        guard  let url = URL(string: img) else { return}
+        guard let data = try? Data(contentsOf: url) else { return}
+        heroeImg.image = UIImage(data: data)
+        
 }
 
+}
