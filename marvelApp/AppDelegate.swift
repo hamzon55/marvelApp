@@ -17,43 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Thread.sleep(forTimeInterval: 1.0)
 
         let navigationController = NavigationBar()
-        
         let main = MainRouter.createModule()
         navigationController.viewControllers = [main]
         PersistentData.shared.baseURL.value = Constants.Network.base_url
         PersistentData.shared.apiKey.value = Constants.Network.apikey
         PersistentData.shared.hash.value = Constants.Network.hash
         PersistentData.shared.ts.value = Constants.Network.ts
-
         window = UIWindow(frame: UIScreen.main.bounds);
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible();
         
         return true
     }
-    
-   
-    
-
-    func applicationWillResignActive(_ application: UIApplication) {
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
- 
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-
-    }
-
-
 }
-

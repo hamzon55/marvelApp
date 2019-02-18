@@ -71,7 +71,7 @@ extension CharacterListPresenter : CharacterListTableActionDelegate{
     func navigate(index: Int) {
 
         guard let vc = view as? UIViewController else { return }
-        router?.navigateToDetail(origin: vc, model: data[index], index)
+        router?.navigateToDetail(origin: vc, model: data[index])
     }
     
     

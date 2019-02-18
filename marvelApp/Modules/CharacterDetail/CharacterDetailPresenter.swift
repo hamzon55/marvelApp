@@ -8,40 +8,30 @@
 
 import UIKit
 import Social
+import Kingfisher
 import AVFoundation
 class CharacterDetailPresenter: CharacterDetailViewToPresenterProtocol {
     
-    
-    var data = SingletonCharacter.sharedInstance.resultsArray
-    let count = SingletonCharacter.sharedInstance.resultsArray.count
-    
-    var dataModel: CharacterData!
-
-    
-    var index = Int()
-    var currentIndex = 0
+    var data: Marvel?
     
     var view: CharacterDetailPresenterToViewProtocol?
     var interactor: CharacterDetailPresenterToInteractorProtocol?
     var router: CharacterDetailPresenterToRouterProtocol?
     
     func updateView() {
-        
-        currentIndex = index
         showInfo()
-
+        showImage()
     }
     
     private func showInfo(){
-        view?.heroeName.text = data[currentIndex].name
-        view?.heroeDesc.text = data[currentIndex].description
+        view?.heroeName.text = data?.name
+        view?.heroeDesc.text = data?.description
     }
-    
-
-    
-
+    private func showImage(){
+        let thumbNailUrl = URL(string: (data?.thumbnail.fullName)! )
+        view?.coverImg.kf.setImage(with: thumbNailUrl)
+    }
 }
 
 extension CharacterDetailPresenter: CharacterDetailInteractorToPresenterProtocol {
-    
 }

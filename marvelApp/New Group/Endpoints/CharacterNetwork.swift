@@ -18,7 +18,7 @@ struct CharacterNetworkFactory: Networking {
         switch type {
         case .list():
             return CharacterNetwork()
-    
+            
         }
     }
 }
@@ -36,7 +36,6 @@ extension CharacterNetworkFactory {
                 "apikey": api_key,
                 "hash": hash,
                 "ts": ts
-                
             ]
         }
         
@@ -47,5 +46,3 @@ extension CharacterNetworkFactory {
         }
     }
 }
-
-

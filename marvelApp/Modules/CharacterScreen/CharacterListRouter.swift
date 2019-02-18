@@ -9,6 +9,8 @@
 import UIKit
 
 class CharacterListRouter: CharacterListPresenterToRouterProtocol{
+
+    
    
     class func createModule() -> UIViewController{
         
@@ -26,7 +28,7 @@ class CharacterListRouter: CharacterListPresenterToRouterProtocol{
         return view
     }
     
-    func navigateToDetail(origin: UIViewController, model: Marvel, _ index: Int) {
-        origin.navigationController?.pushViewController(CharacterDetailRouter.createModule(data: model, index: index), animated: true)
+    func navigateToDetail(origin: UIViewController, model: Marvel) {
+        origin.navigationController?.pushViewController(CharacterDetailRouter.createModule(data: model), animated: true)
     }
 }

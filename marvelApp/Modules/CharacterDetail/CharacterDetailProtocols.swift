@@ -26,10 +26,11 @@ protocol CharacterDetailViewToPresenterProtocol: class{
     var view: CharacterDetailPresenterToViewProtocol? {get set}
     var interactor: CharacterDetailPresenterToInteractorProtocol? {get set}
     var router: CharacterDetailPresenterToRouterProtocol? {get set}
+    var data: Marvel? {get set}
     func updateView()
 
 }
 
 protocol CharacterDetailPresenterToRouterProtocol: class{
-    static func createModule(data: Marvel, index: Int) -> UIViewController
+    static func createModule(data: Marvel) -> UIViewController
 }

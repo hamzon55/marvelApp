@@ -27,6 +27,6 @@ class CharacterListTableViewCell : UITableViewCell {
         heroeName.text = character.name
         let thumbNailUrl = URL(string: character.thumbnail.fullName)
         self.heroeImg.kf.setImage(with: thumbNailUrl)
-
     }
 }
+
