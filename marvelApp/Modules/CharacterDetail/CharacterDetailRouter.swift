@@ -10,7 +10,7 @@ import UIKit
 
 class CharacterDetailRouter: CharacterDetailPresenterToRouterProtocol{
   
-    class func createModule(data: CharacterModel, index: Int) -> UIViewController{
+    class func createModule(data: Marvel, index: Int) -> UIViewController{
         let view = CharacterDetailViewController()
         let presenter: CharacterDetailViewToPresenterProtocol & CharacterDetailInteractorToPresenterProtocol = CharacterDetailPresenter()
         let interactor: CharacterDetailPresenterToInteractorProtocol = CharacterDetailInteractor()

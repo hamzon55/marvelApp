@@ -12,7 +12,7 @@ import Foundation
 class SingletonCharacter : NSObject {
     
     static let sharedInstance = SingletonCharacter()
-    var resultsArray: [CharacterModel] = []
+    var resultsArray: [Marvel] = []
     private override init() { }
     
 }

@@ -10,8 +10,8 @@ import UIKit
 
 final class CharacterListTableDataSource: NSObject, UITableViewDataSource {
     
-    var data :[CharacterModel]?
-    convenience init(data: [CharacterModel]) {
+    var data :[Marvel]?
+    convenience init(data: [Marvel]) {
         self.init()
         self.data = data
     }

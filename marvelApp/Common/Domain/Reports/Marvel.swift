@@ -9,22 +9,15 @@
 import Foundation
 
 
-class CharacterModel: Decodable {
+struct Marvel: Decodable {
     let id: Int
     let name: String
     let description: String
     let thumbnail: ThumbnailModel
-
-    init(id: Int, name: String, thumbnail: ThumbnailModel, description: String) {
-        self.id = id
-        self.name = name
-        self.thumbnail = thumbnail
-        self.description = description
-    }
 }
 
 class CharacterData: Decodable {
-    let results: [CharacterModel]?
+    let results: [Marvel]?
 }
 
 class CharacterResponse: Decodable {

@@ -23,7 +23,7 @@ class CharacterListTableViewCell : UITableViewCell {
     static var cellType: String{
         return String(describing: self)
     }
-    func displayCell(character: CharacterModel){
+    func displayCell(character: Marvel){
         heroeName.text = character.name
         let thumbNailUrl = URL(string: character.thumbnail.fullName)
         self.heroeImg.kf.setImage(with: thumbNailUrl)

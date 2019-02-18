@@ -26,7 +26,7 @@ class CharacterListRouter: CharacterListPresenterToRouterProtocol{
         return view
     }
     
-    func navigateToDetail(origin: UIViewController, model: CharacterModel, _ index: Int) {
+    func navigateToDetail(origin: UIViewController, model: Marvel, _ index: Int) {
         origin.navigationController?.pushViewController(CharacterDetailRouter.createModule(data: model, index: index), animated: true)
     }
 }

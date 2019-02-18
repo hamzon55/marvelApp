@@ -12,7 +12,7 @@
 		202E96C321F5F2750053F514 /* CharacterListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202E96C221F5F2750053F514 /* CharacterListTableViewCell.xib */; };
 		202E96C721F5FE6C0053F514 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 202E96C621F5FE6C0053F514 /* Localizable.strings */; };
 		202E96C921F5FED10053F514 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E96C821F5FED10053F514 /* Localized.swift */; };
-		202E96F021F8C3200053F514 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E96EF21F8C3200053F514 /* CharacterResponse.swift */; };
+		202E96F021F8C3200053F514 /* Marvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E96EF21F8C3200053F514 /* Marvel.swift */; };
 		202E96F521F8C9270053F514 /* CharacterNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E96F421F8C9270053F514 /* CharacterNetwork.swift */; };
 		202E96F721F8CA980053F514 /* ServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E96F621F8CA980053F514 /* ServiceProtocols.swift */; };
 		202E96F921F8CAB50053F514 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E96F821F8CAB50053F514 /* Endpoint.swift */; };
@@ -81,7 +81,7 @@
 		202E96C221F5F2750053F514 /* CharacterListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterListTableViewCell.xib; sourceTree = "<group>"; };
 		202E96C621F5FE6C0053F514 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		202E96C821F5FED10053F514 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
-		202E96EF21F8C3200053F514 /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		202E96EF21F8C3200053F514 /* Marvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel.swift; sourceTree = "<group>"; };
 		202E96F421F8C9270053F514 /* CharacterNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNetwork.swift; sourceTree = "<group>"; };
 		202E96F621F8CA980053F514 /* ServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocols.swift; sourceTree = "<group>"; };
 		202E96F821F8CAB50053F514 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 		202E96EE21F8C2FA0053F514 /* Reports */ = {
 			isa = PBXGroup;
 			children = (
-				202E96EF21F8C3200053F514 /* CharacterResponse.swift */,
+				202E96EF21F8C3200053F514 /* Marvel.swift */,
 			);
 			path = Reports;
 			sourceTree = "<group>";
@@ -639,7 +639,7 @@
 				20E678CE21EA790000C2CBF5 /* NavigationBar.swift in Sources */,
 				20A8E93421F4CE3D001827CC /* CharacterListTableViewCell.swift in Sources */,
 				208CC5DD21FB988D00C74826 /* CharacterDetailRouter.swift in Sources */,
-				202E96F021F8C3200053F514 /* CharacterResponse.swift in Sources */,
+				202E96F021F8C3200053F514 /* Marvel.swift in Sources */,
 				202E96C921F5FED10053F514 /* Localized.swift in Sources */,
 				202E96FB21F8D9370053F514 /* WebService.swift in Sources */,
 				202E96BB21F5B71A0053F514 /* CharacterListTableDataSource.swift in Sources */,

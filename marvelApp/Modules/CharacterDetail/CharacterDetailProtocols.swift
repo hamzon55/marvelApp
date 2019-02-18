@@ -31,5 +31,5 @@ protocol CharacterDetailViewToPresenterProtocol: class{
 }
 
 protocol CharacterDetailPresenterToRouterProtocol: class{
-    static func createModule(data: CharacterModel, index: Int) -> UIViewController
+    static func createModule(data: Marvel, index: Int) -> UIViewController
 }

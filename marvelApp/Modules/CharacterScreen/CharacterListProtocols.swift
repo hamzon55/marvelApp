@@ -39,5 +39,5 @@ protocol CharacterListViewToPresenterProtocol: class{
 protocol CharacterListPresenterToRouterProtocol: class{
     static func createModule() -> UIViewController
     
-    func navigateToDetail(origin : UIViewController, model: CharacterModel, _ index: Int)
+    func navigateToDetail(origin : UIViewController, model: Marvel, _ index: Int)
 }
