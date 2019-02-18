@@ -15,7 +15,7 @@ class CharacterListPresenter: CharacterListViewToPresenterProtocol {
     var interactor: CharacterListPresenterToInteractorProtocol?
     var router: CharacterListPresenterToRouterProtocol?
     
-    private var data = SingletonCharacter.sharedInstance.resultsArray
+    private var data : [Marvel] = []
     private lazy var tableDelegate: CharacterListTableDelegate = {
         return CharacterListTableDelegate(actionDelegate: self )
     }()
@@ -47,7 +47,6 @@ extension CharacterListPresenter: CharacterListInteractorToPresenterProtocol {
     func fetchedCharacterListDataSuccess(_ model: CharacterResponse) {
         guard let list = model.data.results else { return }
         data = list
-        SingletonCharacter.sharedInstance.resultsArray = list
         tableDataSource = CharacterListTableDataSource(data: list)
         view?.tableView.dataSource = tableDataSource
         view?.tableView.reloadData()

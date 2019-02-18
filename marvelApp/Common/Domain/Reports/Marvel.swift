@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct Marvel: Decodable {
     let id: Int
     let name: String
@@ -24,8 +23,6 @@ class CharacterResponse: Decodable {
     let data: CharacterData
 }
 
-
-
 class ThumbnailModel: Decodable {
     let path: String
     let ext: String
@@ -33,17 +30,6 @@ class ThumbnailModel: Decodable {
     enum CodingKeys: String, CodingKey {
         case path
         case ext = "extension"
-    }
-    
-    init(path: String, ext: String) {
-        self.path = path
-        self.ext = ext
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let allValues = try decoder.container(keyedBy: CodingKeys.self)
-        path = try allValues.decode(String.self, forKey: .path)
-        ext = try allValues.decode(String.self, forKey: .ext)
     }
     
     var fullName: String {
