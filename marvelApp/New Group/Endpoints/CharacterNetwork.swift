@@ -9,15 +9,15 @@
 import Foundation
 
 enum CharacterService: ServiceEnum {
-    case list()
+    case list(name: String)
 }
 
 struct CharacterNetworkFactory: Networking {
     typealias EnumType = CharacterService
     static func getService(from type: EnumType) -> Requestable {
         switch type {
-        case .list():
-            return CharacterNetwork()
+        case .list(let name):
+            return CharacterNetwork(name)
             
         }
     }
@@ -29,20 +29,26 @@ extension CharacterNetworkFactory {
         private var api_key: String
         private var ts: String
         private var hash: String
+        private var name: String
         var method: HTTPMethod = .get
         var path: String = ""
         var parameters: [String : Any] {
-            return [
+            var params = [
                 "apikey": api_key,
                 "hash": hash,
                 "ts": ts
             ]
+            if (name != ""){
+                params.updateValue(name, forKey: "nameStartsWith")
+            }
+            return params
         }
         
-        init(){
+        init(_ name: String){
             self.api_key = PersistentData.shared.apiKey.value
             self.hash = PersistentData.shared.hash.value
             self.ts = PersistentData.shared.ts.value
+            self.name = name
         }
     }
 }

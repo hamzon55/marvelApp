@@ -26,13 +26,9 @@ class CharacterListViewController: UIViewController, UISearchBarDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {        
-    }
-    
+
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         presenter?.searchButtonPressed()
-
     }
 }
 

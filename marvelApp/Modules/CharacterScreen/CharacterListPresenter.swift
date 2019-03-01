@@ -60,9 +60,7 @@ extension CharacterListPresenter: CharacterListInteractorToPresenterProtocol {
     func searchButtonPressed(){
         showLoader()
         guard let text = view?.searchView.text else { return }
-        if text != "" {
             interactor?.search(withInfo: text)
-        }
     }
 }
 extension CharacterListPresenter : CharacterListTableActionDelegate{

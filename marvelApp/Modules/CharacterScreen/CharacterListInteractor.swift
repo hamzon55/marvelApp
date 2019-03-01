@@ -17,7 +17,7 @@ class CharacterListInteractor: CharacterListPresenterToInteractorProtocol{
     private let disposeBag = DisposeBag()
     
     func CharacterList() {
-        let list = webService.load(modelType: CharacterResponse.self, from: .Character(serviceType: .list()))
+        let list = webService.load(modelType: CharacterResponse.self, from: .Character(serviceType: .list(name: DynamicVariables.Networking.Url.item_search)))
             list.observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] (results) in
                 results.validate {
