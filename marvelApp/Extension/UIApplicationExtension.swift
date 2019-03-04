@@ -1,6 +1,6 @@
 //
 //  UIApplicationExtension.swift
-//  viperProject
+//  marvelApp
 //
 //  Created by Hamza Jerbi on 29/01/2019.
 //  Copyright © 2019 Hamza Jerbi. All rights reserved.

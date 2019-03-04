@@ -26,7 +26,6 @@
 		208CC5DB21FB988D00C74826 /* CharacterDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208CC5D121FB988D00C74826 /* CharacterDetailProtocols.swift */; };
 		208CC5DC21FB988D00C74826 /* CharacterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 208CC5D221FB988D00C74826 /* CharacterDetailViewController.xib */; };
 		208CC5DD21FB988D00C74826 /* CharacterDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208CC5D321FB988D00C74826 /* CharacterDetailRouter.swift */; };
-		208CC5DE21FB988D00C74826 /* CharacterDetailEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208CC5D421FB988D00C74826 /* CharacterDetailEntities.swift */; };
 		208CC5DF21FB988D00C74826 /* CharacterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208CC5D521FB988D00C74826 /* CharacterDetailPresenter.swift */; };
 		208CC5E021FB988D00C74826 /* CharacterDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208CC5D621FB988D00C74826 /* CharacterDetailInteractor.swift */; };
 		208CC5E121FB988D00C74826 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208CC5D721FB988D00C74826 /* CharacterDetailViewController.swift */; };
@@ -93,7 +92,6 @@
 		208CC5D121FB988D00C74826 /* CharacterDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailProtocols.swift; sourceTree = "<group>"; };
 		208CC5D221FB988D00C74826 /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
 		208CC5D321FB988D00C74826 /* CharacterDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailRouter.swift; sourceTree = "<group>"; };
-		208CC5D421FB988D00C74826 /* CharacterDetailEntities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailEntities.swift; sourceTree = "<group>"; };
 		208CC5D521FB988D00C74826 /* CharacterDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenter.swift; sourceTree = "<group>"; };
 		208CC5D621FB988D00C74826 /* CharacterDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailInteractor.swift; sourceTree = "<group>"; };
 		208CC5D721FB988D00C74826 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
@@ -168,7 +166,7 @@
 		202E96BF21F5D1AB0053F514 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				20A8E93021F4CCA8001827CC /* SecondScreen */,
+				20A8E93021F4CCA8001827CC /* CharacterDetail */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -274,7 +272,6 @@
 				208CC5D121FB988D00C74826 /* CharacterDetailProtocols.swift */,
 				208CC5D221FB988D00C74826 /* CharacterDetailViewController.xib */,
 				208CC5D321FB988D00C74826 /* CharacterDetailRouter.swift */,
-				208CC5D421FB988D00C74826 /* CharacterDetailEntities.swift */,
 				208CC5D521FB988D00C74826 /* CharacterDetailPresenter.swift */,
 				208CC5D621FB988D00C74826 /* CharacterDetailInteractor.swift */,
 				208CC5D721FB988D00C74826 /* CharacterDetailViewController.swift */,
@@ -291,13 +288,13 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
-		20A8E93021F4CCA8001827CC /* SecondScreen */ = {
+		20A8E93021F4CCA8001827CC /* CharacterDetail */ = {
 			isa = PBXGroup;
 			children = (
 				20A8E93321F4CE3D001827CC /* CharacterListTableViewCell.swift */,
 				202E96C221F5F2750053F514 /* CharacterListTableViewCell.xib */,
 			);
-			path = SecondScreen;
+			path = CharacterDetail;
 			sourceTree = "<group>";
 		};
 		20E6788021E9131700C2CBF5 = {
@@ -645,7 +642,6 @@
 				20E678D321EA8A9000C2CBF5 /* CharacterListProtocols.swift in Sources */,
 				20E678C321E93A4600C2CBF5 /* MainRouter.swift in Sources */,
 				202E96BD21F5CC620053F514 /* CharacterListTableDelegate.swift in Sources */,
-				208CC5DE21FB988D00C74826 /* CharacterDetailEntities.swift in Sources */,
 				20E678D521EA8A9C00C2CBF5 /* CharacterListInteractor.swift in Sources */,
 				208CC5DB21FB988D00C74826 /* CharacterDetailProtocols.swift in Sources */,
 				202E96F521F8C9270053F514 /* CharacterNetwork.swift in Sources */,

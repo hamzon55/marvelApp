@@ -1,6 +1,6 @@
 //
-//  viperProjectUITests.swift
-//  viperProjectUITests
+//  marvelAppUITests.swift
+//  marvelAppUITests
 //
 //  Created by Hamza Jerbi on 11/01/2019.
 //  Copyright © 2019 Hamza Jerbi. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class viperProjectUITests: XCTestCase {
+class marvelAppUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
