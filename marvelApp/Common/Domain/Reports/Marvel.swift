@@ -15,15 +15,15 @@ struct Marvel: Decodable {
     let thumbnail: ThumbnailModel
 }
 
-class CharacterData: Decodable {
+struct CharacterData: Decodable {
     let results: [Marvel]?
 }
 
-class CharacterResponse: Decodable {
+struct CharacterResponse: Decodable {
     let data: CharacterData
 }
 
-class ThumbnailModel: Decodable {
+struct ThumbnailModel: Decodable {
     let path: String
     let ext: String
     
